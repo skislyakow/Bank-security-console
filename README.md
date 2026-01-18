@@ -12,6 +12,42 @@ Then use `pip` (or `pip3`, if there is a conflict with Python2) to install depen
 pip install -r requirements.txt
 ```
 
+### Configuration (Environment Variables)
+The project uses environment variables to store sensitive information and database configurations.
+Create a file named .env in the root directory of the project.
+Copy the following variables into your .env file and set your own values:
+
+```env
+# Django Security
+SECRET_KEY=your-secret-key-goes-here
+
+# Database Settings
+DB_ENGINE=django.db.backends.postgresql
+DB_NAME=your_database_name
+DB_USER=your_database_user
+DB_PASSWORD=your_database_password
+DB_HOST=127.0.0.1
+DB_PORT=5432
+```
+
+Reference Table
+```
+Variable	Description										Example
+
+SECRET_KEY	Django's secret key for cryptographic signing.	django-insecure-xxx...
+DB_ENGINE	Database backend engine.						django.db.backends.postgresql
+DB_NAME	    The name of your database.						my_db
+DB_USER	    Database user login.							postgres
+DB_PASSWORD	Password for the database user.					mypassword
+DB_HOST	    Database server address.						localhost
+DB_PORT	    Port number for the database.					5432
+```
+
+
+
+
+
+
 ### Project Goals
 
 The code is written for educational purposes on online-course for web-developers [dvmn.org](https://dvmn.org/).
