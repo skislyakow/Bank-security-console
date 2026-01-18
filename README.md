@@ -43,11 +43,6 @@ DB_HOST	    Database server address.						localhost
 DB_PORT	    Port number for the database.					5432
 ```
 
-
-
-
-
-
 ### Project Goals
 
 The code is written for educational purposes on online-course for web-developers [dvmn.org](https://dvmn.org/).
